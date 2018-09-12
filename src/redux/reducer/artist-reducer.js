@@ -1,5 +1,5 @@
 import _ from 'lodash';
-import { FETCH_ARTIST_FAILURE, FETCH_ARTIST_SUCCESS } from './artist-action';
+import { FETCH_ARTIST_FAILURE, FETCH_ARTIST_SUCCESS } from '../action/artist-action';
 
 const initialState = {
   artists: [],

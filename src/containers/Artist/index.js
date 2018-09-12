@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { fetchArtist } from '../../redux/artist-action';
+import { fetchArtist } from '../../redux/action/artist-action';
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import ArtistItem from '../../components/ArtistItem';

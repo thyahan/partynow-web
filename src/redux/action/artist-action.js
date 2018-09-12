@@ -1,5 +1,5 @@
 import _ from 'lodash';
-import { Artist } from '../service';
+import { Artist } from '../../service';
 
 export const FETCH_ARTIST_SUCCESS = 'FETCH_ARTIST_SUCCESS';
 export const FETCH_ARTIST_FAILURE = 'FETCH_ARTIST_FAILURE';

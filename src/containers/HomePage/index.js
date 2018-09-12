@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { logout, initialLoginData } from '../../redux/loginAction';
+import { logout, initialLoginData } from '../../redux/action/login-action';
 import _ from 'lodash';
 /**
  * Component

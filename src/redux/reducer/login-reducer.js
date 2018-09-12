@@ -1,4 +1,4 @@
-import { INITIAL_LOGIN_DATA_RECEIVED, LOGOUT } from './loginAction';
+import { INITIAL_LOGIN_DATA_RECEIVED, LOGOUT } from '../action/login-action';
 import _ from 'lodash';
 const initialState = {
   userInfo: {},
