@@ -1,0 +1,28 @@
+.artist-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid whitesmoke;
+  border-radius: 4px;
+  font-size: 14px;
+  &:hover {
+    background-color: whitesmoke;
+  }
+  div {
+    padding: 9px;
+    min-width: 200px;
+  }
+  .id {
+    min-width: 250px;
+  }
+  .name {
+    font-weight: bold;
+    &:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+  .status {
+    min-width: 50px;
+  }
+}

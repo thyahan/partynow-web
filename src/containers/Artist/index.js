@@ -2,33 +2,17 @@ import { connect } from 'react-redux';
 import { fetchArtist } from '../../redux/artist-action';
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
-
-const Item = styled.div`
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  border: 1px solid whitesmoke;
-  padding: 9px;
-  padding-left: 32px;
-  &:hover {
-    background-color: whitesmoke;
-  }
-`;
+import ArtistItem from '../../components/ArtistItem';
 
 class Artist extends Component {
   componentDidMount () {
     this.props.fetchArtist();
   }
-  onArtistClick(artist){
-    console.log(`clicked at ${artist.name}`);
+  onArtistClick (e) {
+    console.log(`clicked at ${e.name}`);
   }
   renderArtists (artists) {
-    return artists.map((artist, i) => {
-      return <Item key={i} onClick={()=>{this.onArtistClick(artist)}}>
-               {artist.name}
-             </Item>;
-    });
+    return artists.map((artist, i) => <ArtistItem key={i} data={artist} onClick={this.onArtistClick.bind(this)} />);
   }
   render () {
     console.log(this.props.artists);
