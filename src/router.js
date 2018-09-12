@@ -5,6 +5,7 @@ import HomePage from './containers/HomePage';
 import About from './containers/About';
 import PageNotFound from './containers/PageNotFound';
 import Artist from './containers/Artist';
+import Brand from './containers/Brand';
 
 const Router = props => {
   return (
@@ -14,6 +15,7 @@ const Router = props => {
         <Route path='/home' component={HomePage} />
         <Route path='/about' component={About} />
         <Route path='/artist' component={Artist} />
+        <Route path='/brand' component={Brand} />
         <Route path='/*' component={PageNotFound} />
       </Switch>
     </div>

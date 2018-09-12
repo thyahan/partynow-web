@@ -1,5 +1,5 @@
 import _ from 'lodash';
-import { Artist } from '../../service';
+import Service from '../../service';
 
 export const FETCH_ARTIST_SUCCESS = 'FETCH_ARTIST_SUCCESS';
 export const FETCH_ARTIST_FAILURE = 'FETCH_ARTIST_FAILURE';
@@ -15,7 +15,7 @@ export const fetchArtistFailure = () => ({
 
 export const fetchArtist = () => {
   return dispatch => {
-    Artist.find().then(res => {
+    Service.artist.find().then(res => {
       if (!res) {
         dispatch(fetchArtistFailure());
       }

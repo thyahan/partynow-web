@@ -1,4 +1,4 @@
 import { combineReducers } from 'redux';
-import { login, preload, artist } from './reducer';
+import { login, preload, artist, brand } from './reducer';
 
-export default combineReducers({ login, preload, artist});
+export default combineReducers({ login, preload, artist, brand});
